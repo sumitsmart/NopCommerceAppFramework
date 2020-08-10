@@ -20,7 +20,7 @@ class LoginPage():
         self.driver.find_element(By.XPATH,self.textbox_username_xpath).send_keys(username)
 
     def enterPassword(self,password):
-        self.driver.find_element(By.XPATH, self.textbox_username_xpath).clear()
+        self.driver.find_element(By.ID, self.textbox_password_id).clear()
         self.driver.find_element(By.ID,self.textbox_password_id).send_keys(password)
 
     def clickLogin(self):

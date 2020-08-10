@@ -1,1 +1,1 @@
-from pageObjects import LoginPage
+from . import LoginPage
