@@ -1,7 +1,3 @@
-import time
-
-import pytest
-from  selenium import webdriver
 from pageObjects.LoginPage import LoginPage
 
 class Test_001:
@@ -21,8 +17,10 @@ class Test_001:
         if actual_title == expected_title:
             assert True
         else:
+            self.driver.save_screenshot("./Screenshots//test_homePageTitle.png")
+            self.driver.close()
             assert False
-        self.driver.close()
+
 
 
     def test_login(self,setUp):
@@ -38,8 +36,10 @@ class Test_001:
         if actual_title == "Dashboard / nopCommerce administration":
             assert True
         else:
+            self.driver.save_screenshot("./Screenshots//test_login.png")
+            self.driver.close()
             assert False
-        self.driver.close()
+
 
 
 
