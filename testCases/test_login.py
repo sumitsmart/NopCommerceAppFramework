@@ -1,39 +1,31 @@
 from pageObjects.LoginPage import LoginPage
 from utilities.readProperties import ReadProperties
-from  utilities.customLogger import LogGen
-class Test_001:
+from  utilities.customLogger import logGen
+import pytest
 
-    baseURl = ReadProperties.getBaseURL()
+
+@pytest.mark.usefixtures("setUp")
+class Test_001():
+
     username = ReadProperties.getuserName()
     password = ReadProperties.getPwd()
-    logger = LogGen.loggen()
+    logger = logGen()
 
-    def test_homePageTitle(self,setUp):
-
+    def test_homePageTitle(self):
         self.logger.info("*************** test_homePageTitle ************")
-        self.driver = setUp
-        self.driver.get(self.baseURl)
         expected_title = "Your store. Login"
         actual_title = self.driver.title
         if actual_title == expected_title:
             assert True
-            self.driver.close()
-            self.logger.info("Title verified successfully")
+            self.logger.info("Title verified successfully\n")
         else:
             self.driver.save_screenshot("./Screenshots//test_homePageTitle.png")
-            self.logger.error("Title verification failed")
-            self.driver.close()
+            self.logger.error("Title verification failed\n")
             assert False
 
 
-
-
-    def test_login(self,setUp):
-
+    def test_login(self):
         self.logger.info("*************** test_login ************")
-        self.driver = setUp
-        self.driver.implicitly_wait(10)
-        self.driver.get(self.baseURl)
         self.lp = LoginPage(self.driver)
 
         self.lp.enterUserName(self.username)
@@ -48,11 +40,12 @@ class Test_001:
         actual_title = self.driver.title
         if actual_title == "Dashboard / nopCommerce administration":
             assert True
-            self.driver.close()
+            self.logger.info("Login verified successfully\n")
+
         else:
             self.driver.save_screenshot("./Screenshots//test_login.png")
             self.driver.close()
-            self.logger.error("Test case failed")
+            self.logger.error("Login Failed\n")
             assert False
 
 
