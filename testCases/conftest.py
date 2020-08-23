@@ -38,7 +38,7 @@ def setUp(request):
 
 def pytest_configure(config):
     config._metadata['Project Name'] = 'npCommereceApp'
-    config._metadata['Module Name'] = 'Admin'
+    config._metadata['Module Name'] = 'Customer'
     config._metadata['Tester'] = 'Sumit Shivhare'
 #
 # It is hook for delete/modify Environment info on HTML report

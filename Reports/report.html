@@ -241,12 +241,12 @@ function filter_table(elem) {
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 16-Aug-2020 at 22:12:08 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.0.1</p>
+    <p>Report generated on 22-Aug-2020 at 23:36:12 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.0.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
         <td>Module Name</td>
-        <td>Admin</td></tr>
+        <td>Customer</td></tr>
       <tr>
         <td>Packages</td>
         <td>{&apos;pytest&apos;: &apos;5.2.4&apos;, &apos;py&apos;: &apos;1.9.0&apos;, &apos;pluggy&apos;: &apos;0.13.1&apos;}</td></tr>
@@ -263,8 +263,8 @@ function filter_table(elem) {
         <td>Tester</td>
         <td>Sumit Shivhare</td></tr></table>
     <h2>Summary</h2>
-    <p>2 tests ran in 22.28 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>2 tests ran in 20.23 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">2 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -275,19 +275,6 @@ function filter_table(elem) {
           <th>Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="failed results-table-row">
-        <tr>
-          <td class="col-result">Failed</td>
-          <td class="col-name">testCases/test_login.py::Test_001::test_login</td>
-          <td class="col-duration">7.66</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">self = &lt;testCases.test_login.Test_001 object at 0x7fcfa64e9c70&gt;<br/><br/>    def test_login(self):<br/>    <br/>        self.logger.info(&quot;*************** test_login ************&quot;)<br/>        self.lp = LoginPage(self.driver)<br/>    <br/>        self.lp.enterUserName(self.username)<br/>        self.logger.info(&quot;Entered Username&quot;)<br/>    <br/>        self.logger.info(&quot;Entered Password&quot;)<br/>        self.lp.enterPassword(self.password)<br/>    <br/>        self.lp.clickLogin()<br/>        self.logger.info(&quot;Clicked on login button&quot;)<br/>    <br/>        actual_title = self.driver.title<br/>        if actual_title == &quot;Dashboard / nopCommerce administratio&quot;:<br/>            assert True<br/>            self.logger.info(&quot;Login verified successfully\n&quot;)<br/>    <br/>        else:<br/>            self.driver.save_screenshot(&quot;./Screenshots//test_login.png&quot;)<br/>            self.driver.close()<br/>            self.logger.error(&quot;Login Failed\n&quot;)<br/>&gt;           assert False<br/><span class="error">E           assert False</span><br/><br/>testCases/test_login.py:52: AssertionError<br/> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m root:test_login.py:31 *************** test_login ************
-[32mINFO    [0m root:test_login.py:35 Entered Username
-[32mINFO    [0m root:test_login.py:37 Entered Password
-[32mINFO    [0m root:test_login.py:41 Clicked on login button
-[1m[31mERROR   [0m root:test_login.py:51 Login Failed<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
@@ -296,5 +283,18 @@ function filter_table(elem) {
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m root:test_login.py:16 *************** test_homePageTitle ************
-[32mINFO    [0m root:test_login.py:21 Title verified successfully<br/></div></td></tr></tbody></table></body></html>
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m root:test_login.py:15 *************** test_homePageTitle ************
+[32mINFO    [0m root:test_login.py:20 Title verified successfully<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testCases/test_login.py::Test_001::test_login</td>
+          <td class="col-duration">6.70</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m root:test_login.py:28 *************** test_login ************
+[32mINFO    [0m root:test_login.py:32 Entered Username
+[32mINFO    [0m root:test_login.py:34 Entered Password
+[32mINFO    [0m root:test_login.py:38 Clicked on login button
+[32mINFO    [0m root:test_login.py:43 Login verified successfully<br/></div></td></tr></tbody></table></body></html>

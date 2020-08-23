@@ -220,3 +220,57 @@
 08/16/2020 10:12:07 PM : INFO: Clicked on login button
 08/16/2020 10:12:08 PM : ERROR: Login Failed
 
+08/17/2020 12:27:27 AM : INFO: *************** test_loginDDT ************
+08/17/2020 12:28:08 AM : INFO: *************** test_loginDDT ************
+08/17/2020 12:28:57 AM : INFO: *************** test_loginDDT ************
+08/17/2020 12:28:57 AM : INFO: Entered Username
+08/17/2020 12:28:57 AM : INFO: Entered Password
+08/17/2020 12:29:04 AM : INFO: Clicked on login button
+08/17/2020 12:29:09 AM : INFO: Login verified successfully
+
+08/17/2020 12:29:11 AM : INFO: Entered Username
+08/17/2020 12:29:11 AM : INFO: Entered Password
+08/17/2020 12:29:11 AM : INFO: Clicked on login button
+08/17/2020 12:29:16 AM : ERROR: Login verification successful
+
+08/17/2020 12:29:16 AM : INFO: Entered Username
+08/17/2020 12:29:16 AM : INFO: Entered Password
+08/17/2020 12:29:17 AM : INFO: Clicked on login button
+08/17/2020 12:29:22 AM : ERROR: Login verification successful
+
+08/17/2020 12:29:22 AM : INFO: Entered Username
+08/17/2020 12:29:22 AM : INFO: Entered Password
+08/17/2020 12:29:23 AM : INFO: Clicked on login button
+08/17/2020 12:29:28 AM : ERROR: Login verification successful
+
+08/17/2020 12:30:10 AM : INFO: *************** test_loginDDT ************
+08/17/2020 12:30:10 AM : INFO: Entered Username
+08/17/2020 12:30:10 AM : INFO: Entered Password
+08/17/2020 12:30:15 AM : INFO: Clicked on login button
+08/17/2020 12:30:20 AM : INFO: Login verified successfully
+
+08/17/2020 12:30:22 AM : INFO: Entered Username
+08/17/2020 12:30:22 AM : INFO: Entered Password
+08/17/2020 12:30:23 AM : INFO: Clicked on login button
+08/17/2020 12:30:28 AM : ERROR: Login verification successful
+
+08/17/2020 12:30:28 AM : INFO: Entered Username
+08/17/2020 12:30:28 AM : INFO: Entered Password
+08/17/2020 12:30:28 AM : INFO: Clicked on login button
+08/17/2020 12:30:33 AM : ERROR: Login verification successful
+
+08/17/2020 12:30:34 AM : INFO: Entered Username
+08/17/2020 12:30:34 AM : INFO: Entered Password
+08/17/2020 12:30:34 AM : INFO: Clicked on login button
+08/17/2020 12:30:39 AM : ERROR: Login verification successful
+
+08/17/2020 12:30:39 AM : INFO: *******Login DDT passed
+08/22/2020 11:35:59 PM : INFO: *************** test_homePageTitle ************
+08/22/2020 11:35:59 PM : INFO: Title verified successfully
+
+08/22/2020 11:36:05 PM : INFO: *************** test_login ************
+08/22/2020 11:36:05 PM : INFO: Entered Username
+08/22/2020 11:36:05 PM : INFO: Entered Password
+08/22/2020 11:36:12 PM : INFO: Clicked on login button
+08/22/2020 11:36:12 PM : INFO: Login verified successfully
+
