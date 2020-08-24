@@ -58,7 +58,7 @@ class CustomerPage:
     def enterLastName(self,lname):
         self.driver.find_element(By.XPATH,self.txt_lnname_xpath).send_keys(lname)
 
-    def setGender(self,gender):
+    def clickGender(self,gender):
         if gender == "Male":
             self.driver.find_element(By.XPATH,self.rb_genderMale_xpath).click()
         elif gender == "Female":

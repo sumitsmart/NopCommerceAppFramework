@@ -15,10 +15,10 @@ def setUp(request):
     browser = request.config.getoption("browser")
     if browser == "chrome":
         print("Launching test in Chrome Browser..........")
-        driver = webdriver.Chrome(executable_path="./Drivers//chromedriver")
+        driver = webdriver.Chrome(executable_path=ReadProperties.getChromeDriverPath())
     elif browser == "firefox":
         print("Launching test in FireFox Browser.........")
-        driver = webdriver.Firefox(executable_path="./Drivers//geckodriver")
+        driver = webdriver.Firefox(executable_path=ReadProperties.getGeckoDriverPath())
     elif browser == "IE":
         print("Launching test in IE Browser...........")
         print("Running test in IE driver")

@@ -274,3 +274,12 @@
 08/22/2020 11:36:12 PM : INFO: Clicked on login button
 08/22/2020 11:36:12 PM : INFO: Login verified successfully
 
+08/24/2020 09:26:38 PM : INFO: *************** test_homePageTitle ************
+08/24/2020 09:26:38 PM : INFO: Title verified successfully
+
+08/24/2020 09:26:43 PM : INFO: *************** test_login ************
+08/24/2020 09:26:43 PM : INFO: Entered Username
+08/24/2020 09:26:43 PM : INFO: Entered Password
+08/24/2020 09:26:49 PM : INFO: Clicked on login button
+08/24/2020 09:26:49 PM : INFO: Login verified successfully
+

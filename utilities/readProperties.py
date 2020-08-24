@@ -21,5 +21,15 @@ class ReadProperties():
         pwd = config.get("Environment variables", "password")
         return pwd
 
+    @staticmethod
+    def getChromeDriverPath():
+        chromedriver = config.get("Environment variables","chromeDriver")
+        return  chromedriver
+
+    @staticmethod
+    def getGeckoDriverPath():
+        geckodriver = config.get("Environment variables","geckoDriver")
+        return  geckodriver
+
 
 
