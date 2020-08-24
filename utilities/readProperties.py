@@ -23,13 +23,22 @@ class ReadProperties():
 
     @staticmethod
     def getChromeDriverPath():
-        chromedriver = config.get("Environment variables","chromeDriver")
+        chromedriver = config.get("Environment variables","chrome_executable_path")
         return  chromedriver
 
     @staticmethod
     def getGeckoDriverPath():
-        geckodriver = config.get("Environment variables","geckoDriver")
+        geckodriver = config.get("Environment variables","firefox_exectuable_path")
         return  geckodriver
+
+    @staticmethod
+    def getLoginPageTitle():
+        title = config.get("Environment variables","login_pageTitle")
+        return title
+
+    @staticmethod
+    def getHomePageTitle():
+        return  config.get("Environment variables","home_pageTitle")
 
 
 

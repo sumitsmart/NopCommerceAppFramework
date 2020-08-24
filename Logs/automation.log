@@ -283,3 +283,25 @@
 08/24/2020 09:26:49 PM : INFO: Clicked on login button
 08/24/2020 09:26:49 PM : INFO: Login verified successfully
 
+08/24/2020 10:47:43 PM : INFO: *************** test_homePageTitle ************
+08/24/2020 10:47:43 PM : INFO: Title verified successfully
+
+08/24/2020 10:47:49 PM : INFO: *************** test_login ************
+08/24/2020 10:47:49 PM : INFO: Entered Username
+08/24/2020 10:47:49 PM : INFO: Entered Password
+08/24/2020 10:47:55 PM : INFO: Clicked on login button
+08/24/2020 10:47:55 PM : INFO: Login verified successfully
+
+08/24/2020 11:25:44 PM : INFO: *************** test_loginPageTitle ************
+08/24/2020 11:25:51 PM : INFO: *************** test_login ************
+08/24/2020 11:26:01 PM : INFO: 
+Entered username and password
+08/24/2020 11:30:33 PM : INFO: *************** test_loginPageTitle ************
+08/24/2020 11:30:39 PM : INFO: *************** test_login ************
+08/24/2020 11:30:45 PM : INFO: Entered username and password
+08/24/2020 11:34:22 PM : INFO: *************** test_loginPageTitle ************
+08/24/2020 11:34:22 PM : INFO: Title verified successfully
+
+08/24/2020 11:34:28 PM : INFO: *************** test_login ************
+08/24/2020 11:34:38 PM : INFO: Entered username and password
+08/24/2020 11:34:38 PM : INFO: Verified Title

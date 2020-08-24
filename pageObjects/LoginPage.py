@@ -15,16 +15,20 @@ class LoginPage():
 
 
     # performing actions on webelements
-    def enterUserName(self,username):
+
+    def getLoginPageTItle(self):
+        return self.driver.title
+
+    def getHomePageTitle(self):
+        return self.driver.title
+
+    def performlogin(self,username,password):
         self.driver.find_element(By.XPATH, self.textbox_username_xpath).clear()
         self.driver.find_element(By.XPATH,self.textbox_username_xpath).send_keys(username)
-
-    def enterPassword(self,password):
         self.driver.find_element(By.ID, self.textbox_password_id).clear()
-        self.driver.find_element(By.ID,self.textbox_password_id).send_keys(password)
+        self.driver.find_element(By.ID, self.textbox_password_id).send_keys(password)
+        self.driver.find_element(By.XPATH, self.button_login_xpath).click()
 
-    def clickLogin(self):
-        self.driver.find_element(By.XPATH,self.button_login_xpath).click()
 
     def clickLogout(self):
         self.driver.find_element(By.LINK_TEXT,self.link_logout_linktext).click()

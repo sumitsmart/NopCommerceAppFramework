@@ -1,51 +1,34 @@
 from pageObjects.LoginPage import LoginPage
+from testCases.test_base import BaseTest
 from utilities.readProperties import ReadProperties
 from  utilities.customLogger import logGen
-import pytest
 
 
-@pytest.mark.usefixtures("setUp")
-class Test_001():
 
-    username = ReadProperties.getuserName()
-    password = ReadProperties.getPwd()
+
+class Test_Login(BaseTest):
+
     logger = logGen()
 
-    def test_homePageTitle(self):
-        self.logger.info("*************** test_homePageTitle ************")
-        expected_title = "Your store. Login"
-        actual_title = self.driver.title
-        if actual_title == expected_title:
-            assert True
+    def test_loginPageTitle(self):
+        self.logger.info("*************** test_loginPageTitle ************")
+        self.lp = LoginPage(self.driver)
+        title = self.lp.getLoginPageTItle()
+        if title == ReadProperties.getLoginPageTitle():
             self.logger.info("Title verified successfully\n")
         else:
-            self.driver.save_screenshot("./Screenshots//test_homePageTitle.png")
-            self.logger.error("Title verification failed\n")
-            assert False
+            self.logger.info("Title verification failed\n")
 
 
     def test_login(self):
         self.logger.info("*************** test_login ************")
         self.lp = LoginPage(self.driver)
+        self.lp.performlogin(ReadProperties.getuserName(),ReadProperties.getPwd())
+        self.logger.info("Entered username and password")
+        title = self.lp.getHomePageTitle()
+        assert title == ReadProperties.getHomePageTitle()
+        self.logger.info("Verified Title")
 
-        self.lp.enterUserName(self.username)
-        self.logger.info("Entered Username")
-
-        self.logger.info("Entered Password")
-        self.lp.enterPassword(self.password)
-
-        self.lp.clickLogin()
-        self.logger.info("Clicked on login button")
-
-        actual_title = self.driver.title
-        if actual_title == "Dashboard / nopCommerce administration":
-            assert True
-            self.logger.info("Login verified successfully\n")
-
-        else:
-            self.driver.save_screenshot("./Screenshots//test_login.png")
-            self.logger.error("Login Failed\n")
-            assert False
 
 
 
