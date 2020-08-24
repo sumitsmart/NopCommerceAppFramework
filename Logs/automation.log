@@ -305,3 +305,34 @@ Entered username and password
 08/24/2020 11:34:28 PM : INFO: *************** test_login ************
 08/24/2020 11:34:38 PM : INFO: Entered username and password
 08/24/2020 11:34:38 PM : INFO: Verified Title
+08/24/2020 11:46:03 PM : INFO: *************** test_loginPageTitle ************
+08/24/2020 11:46:03 PM : INFO: Title verified successfully
+
+08/24/2020 11:46:09 PM : INFO: *************** test_login ************
+08/24/2020 11:46:15 PM : INFO: Entered username and password
+08/24/2020 11:46:15 PM : INFO: Verified Title
+08/24/2020 11:47:53 PM : INFO: *************** test_loginPageTitle ************
+08/24/2020 11:47:53 PM : INFO: Title verified successfully
+
+08/24/2020 11:47:59 PM : INFO: *************** test_login ************
+08/24/2020 11:48:05 PM : INFO: Entered username and password
+08/24/2020 11:49:12 PM : INFO: *************** test_loginPageTitle ************
+08/24/2020 11:49:12 PM : INFO: Title verification failed
+
+08/24/2020 11:49:16 PM : INFO: *************** test_login ************
+08/24/2020 11:49:23 PM : INFO: Entered username and password
+08/24/2020 11:49:23 PM : INFO: Verified Title
+08/24/2020 11:54:21 PM : INFO: *************** test_loginPageTitle ************
+08/24/2020 11:54:21 PM : INFO: Title verification failed
+
+08/24/2020 11:54:28 PM : INFO: *************** test_login ************
+08/24/2020 11:54:35 PM : INFO: Entered username and password
+08/24/2020 11:54:35 PM : INFO: Login Test Passed
+
+08/24/2020 11:56:04 PM : INFO: *************** test_loginPageTitle ************
+08/24/2020 11:56:04 PM : INFO: Title verification failed
+
+08/24/2020 11:56:10 PM : INFO: *************** test_login ************
+08/24/2020 11:56:17 PM : INFO: Entered username and password
+08/24/2020 11:56:17 PM : INFO: Login Test Passed
+
