@@ -336,3 +336,31 @@ Entered username and password
 08/24/2020 11:56:17 PM : INFO: Entered username and password
 08/24/2020 11:56:17 PM : INFO: Login Test Passed
 
+08/25/2020 12:01:38 AM : INFO: *************** test_login ************
+08/25/2020 12:01:38 AM : INFO: *************** test_loginPageTitle ************
+08/25/2020 12:01:38 AM : INFO: Title verified successfully
+
+08/25/2020 12:01:44 AM : INFO: Entered username and password
+08/25/2020 12:01:44 AM : INFO: Login Test Passed
+
+08/25/2020 09:46:03 AM : INFO: *************** test_loginPageTitle ************
+08/25/2020 09:46:03 AM : INFO: Title verified successfully
+
+08/25/2020 09:46:03 AM : INFO: *************** test_login ************
+08/25/2020 09:46:08 AM : INFO: Entered username and password
+08/25/2020 09:46:08 AM : INFO: Login Test Passed
+
+08/25/2020 09:46:27 AM : INFO: *************** test_loginPageTitle ************
+08/25/2020 09:46:27 AM : INFO: Title verified successfully
+
+08/25/2020 09:46:27 AM : INFO: *************** test_login ************
+08/25/2020 09:46:32 AM : INFO: Entered username and password
+08/25/2020 09:46:32 AM : INFO: Login Test Passed
+
+08/25/2020 11:51:01 PM : INFO: *************** test_login ************
+08/25/2020 11:51:01 PM : INFO: *************** test_loginPageTitle ************
+08/25/2020 11:51:01 PM : INFO: Title verified successfully
+
+08/25/2020 11:51:08 PM : INFO: Entered username and password
+08/25/2020 11:51:08 PM : INFO: Login Test Passed
+

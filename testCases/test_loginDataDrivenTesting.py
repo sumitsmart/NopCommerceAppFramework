@@ -1,5 +1,5 @@
 from pageObjects.LoginPage import LoginPage
-from utilities.readProperties import ReadProperties
+from utilities.readConfig import ReadProperties
 from  utilities.customLogger import logGen
 import pytest
 from testData.LoginData import loginData

@@ -8,8 +8,7 @@ class ReadProperties():
 
     @staticmethod
     def getBaseURL():
-        baseURL = config.get("Environment variables","baseURL")
-        return baseURL
+        return config.get("Environment variables","baseURL")
 
     @staticmethod
     def getuserName():
@@ -18,23 +17,23 @@ class ReadProperties():
 
     @staticmethod
     def getPwd():
-        pwd = config.get("Environment variables", "password")
-        return pwd
+      return config.get("Environment variables", "password")
+
 
     @staticmethod
     def getChromeDriverPath():
-        chromedriver = config.get("Environment variables","chrome_executable_path")
-        return  chromedriver
+        return config.get("Environment variables","chrome_executable_path")
+
 
     @staticmethod
     def getGeckoDriverPath():
-        geckodriver = config.get("Environment variables","firefox_exectuable_path")
-        return  geckodriver
+       return config.get("Environment variables","firefox_exectuable_path")
+
 
     @staticmethod
     def getLoginPageTitle():
-        title = config.get("Environment variables","login_pageTitle")
-        return title
+       return config.get("Environment variables","login_pageTitle")
+
 
     @staticmethod
     def getHomePageTitle():

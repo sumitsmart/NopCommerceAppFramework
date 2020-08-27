@@ -1,6 +1,6 @@
 from pageObjects.LoginPage import LoginPage
 from testCases.test_base import BaseTest
-from utilities.readProperties import ReadProperties
+from utilities.readConfig import ReadProperties
 from  utilities.customLogger import logGen
 
 class Test_Login(BaseTest):
@@ -22,7 +22,7 @@ class Test_Login(BaseTest):
     def test_login(self):
         self.logger.info("*************** test_login ************")
         self.lp = LoginPage(self.driver)
-        self.lp.performlogin(ReadProperties.getuserName(),ReadProperties.getPwd())
+        self.lp.performLogin(ReadProperties.getuserName(),ReadProperties.getPwd())
         self.logger.info("Entered username and password")
         title = self.lp.getHomePageTitle()
         if title ==  ReadProperties.getHomePageTitle():

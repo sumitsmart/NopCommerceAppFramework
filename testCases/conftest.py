@@ -1,6 +1,6 @@
 from selenium import webdriver
 import pytest
-from utilities.readProperties import ReadProperties
+from utilities.readConfig import ReadProperties
 from py.xml import html
 
 

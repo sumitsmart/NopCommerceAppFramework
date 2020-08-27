@@ -1,8 +1,8 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
+from pageObjects.BasePage import BasePage
 
-
-class CustomerPage:
+class CustomerPage(BasePage):
 
     # object repository
     lnk_CustomerMenu_xpath = "//a[@href='#']//span[text()='Customers']"
@@ -31,9 +31,8 @@ class CustomerPage:
     btnGuestsdelete_xpath = "(//ul[@id='SelectedCustomerRoleIds_taglist']/li//span[@class='k-select'])[1]"
 
 
-    def __init__(self,driver):
-        self.driver = driver
-
+    def __init__(self, driver):
+        super().__init__(driver)
 
     # Actions methods
 
@@ -102,8 +101,7 @@ class CustomerPage:
         self.driver.execute_script("argument[0].click();",self.listItem)
 
     def selectManagerOfVendor(self,value):
-         select  = Select(self.driver.find_element(By.XPATH,self.drpVendorId_xpath))
-         select.select_by_visible_text(value)
+        BasePage.selectByVisisbleText(self.driver.find_element(By.XPATH,self.drpVendorId_xpath),value)
 
     def enterAdminComment(self,value):
          self.driver.find_element(By.CSS_SELECTOR,self.txtAdminComment_css).send_keys(value)

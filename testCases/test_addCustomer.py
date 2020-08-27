@@ -3,23 +3,17 @@ import pytest
 from pageObjects.CustomerPage import CustomerPage
 from pageObjects.LoginPage import LoginPage
 from utilities.customLogger import logGen
-from utilities.readProperties import ReadProperties
+from utilities.readConfig import ReadProperties
 
 @pytest.mark.usefixtures("setUp")
 class Test_003_AddNewCustomer():
 
-    username = ReadProperties.getuserName()
-    password = ReadProperties.getPwd()
     logger = logGen()
-
-
 
     def test_addNewCustomer(self):
         self.logger.info("*************** test_addNewCustomer ************")
         self.lp = LoginPage(self.driver)
-        self.lp.enterUserName(self.username)
-        self.lp.enterPassword(self.password)
-        self.lp.clickLogin()
+        self.lp.performlogin(ReadProperties.getuserName(),ReadProperties.getPwd())
         self.logger.info("*****Login Successful******")
 
         self.cp = CustomerPage(self.driver)
